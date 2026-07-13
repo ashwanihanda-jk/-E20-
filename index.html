@@ -3,7 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>इथेनॉल क्षति रिपोर्ट अभियान</title>
+<title>इथेनॉल क्षति रिपोर्ट अभियान | E20 Ethanol Damage Report Campaign</title>
+
+<!-- Open Graph Meta Tags for Social Media Sharing -->
+<meta property="og:title" content="🚨 E20 इथेनॉल क्षति रिपोर्ट अभियान | E20 Ethanol Damage Report Campaign">
+<meta property="og:description" content="अपनी गाड़ी को हुए E20 पेट्रोल नुकसान की रिपोर्ट दर्ज करें। Report vehicle damage caused by E20 ethanol petrol.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ashwanihanda-jk.github.io/-E20-/">
+<meta property="og:image" content="https://via.placeholder.com/1200x630/15181B/FFB020?text=E20+Ethanol+Damage+Report">
+<meta property="og:site_name" content="E20 Damage Report Campaign">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🚨 E20 इथेनॉल क्षति रिपोर्ट अभियान">
+<meta name="twitter:description" content="अपनी गाड़ी को हुए E20 नुकसान की रिपोर्ट दर्ज करें | Report E20 damage">
+<meta name="twitter:image" content="https://via.placeholder.com/1200x630/15181B/FFB020?text=E20+Ethanol+Damage+Report">
+<meta name="twitter:site" content="@ashwanihandajk">
+
+<!-- Additional Meta Tags -->
+<meta name="description" content="E20 इथेनॉल पेट्रोल से अपने वाहन को हुए नुकसान का रिपोर्ट दर्ज करें। Citizen reporting platform for E20 ethanol petrol damage.">
+<meta name="keywords" content="E20, ethanol, petrol, damage, report, campaign, vehicle, नुकसान, रिपोर्ट">
+<meta name="author" content="Ashwani Handa">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Baloo+2:wght@600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -47,13 +68,14 @@
   .share-btn:hover{ background:rgba(255,255,255,0.09); }
   .share-btn.wa{ border-color:rgba(63,166,107,0.4); color:var(--green-ok); }
   .share-btn.copy{ border-color:rgba(255,176,32,0.4); color:var(--amber); }
+  .share-btn.tw{ border-color:rgba(29,155,240,0.4); color:#1D9BF0; }
 
   footer{ max-width:700px; margin:50px auto 40px; padding:0 20px 20px; font-size:0.78rem; color:var(--steel-light); border-top:1px solid rgba(255,255,255,0.07); padding-top:18px; }
 </style>
 </head>
 <body>
 
-<header><div class="dot"></div><span>इथेनॉल क्षति रिपोर्ट अभियान</span></header>
+<header><div class="dot"></div><span>इथेनॉल क्षति रिपोर्ट अभियान | E20 Damage Report Campaign</span></header>
 
 <section class="hero">
   <div class="eyebrow">#EthanolDamageReport</div>
@@ -63,11 +85,9 @@
 </section>
 
 <section class="section">
-  <div class="section-title head-hi">शिकायत दर्ज करें</div>
+  <div class="section-title head-hi">शिकायत दर्ज करें | File Report</div>
   <div class="section-sub">यह एक स्व-घोषित (unverified) नागरिक रिपोर्ट है। भरा गया डेटा फॉर्म के मालिक की Google Sheet में जमा होता है।</div>
   <div class="form-wrap">
-    <!-- ===== इसे बदलें: नीचे GOOGLE_FORM_EMBED_URL_HERE की जगह अपने फॉर्म का embed लिंक डालें ===== -->
-    <!-- फॉर्म खोलकर ऊपर तीन-डॉट मेनू (⋮) → Embed HTML से iframe src लिंक मिलेगा -->
     <iframe id="formFrame" src="https://docs.google.com/forms/d/e/1FAIpQLSeaIFm1vHtQJ5j6WMLzdoZ5RWGuxJ2kp064wdE03d3fPNyV1w/viewform?embedded=true" style="display:none;"></iframe>
     <div class="form-placeholder" id="formPlaceholder">
       <div class="warn">⚠️ फॉर्म अभी जोड़ा नहीं गया है।</div>
@@ -77,12 +97,12 @@
 </section>
 
 <section class="section">
-  <div class="section-title head-hi">सोशल मीडिया पर साझा करें</div>
+  <div class="section-title head-hi">सोशल मीडिया पर साझा करें | Share on Social Media</div>
   <div class="section-sub">यह संदेश कॉपी करें या सीधे नीचे दिए बटन से भेजें।</div>
   <div class="share-box">
     <div class="share-preview" id="sharePreview">तैयार हो रहा है…</div>
     <div class="share-actions">
-      <a class="share-btn" id="shareTw" href="#" target="_blank" rel="noopener">X पर पोस्ट करें</a>
+      <a class="share-btn tw" id="shareTw" href="#" target="_blank" rel="noopener">X पर पोस्ट करें</a>
       <a class="share-btn wa" id="shareWa" href="#" target="_blank" rel="noopener">WhatsApp पर भेजें</a>
       <button class="share-btn copy" id="shareCopy">टेक्स्ट कॉपी करें</button>
     </div>
@@ -90,7 +110,8 @@
 </section>
 
 <footer>
-  <p><b>नोट:</b> यह पेज किसी सरकारी/आधिकारिक शिकायत पोर्टल का हिस्सा नहीं है। दर्ज जानकारी उपयोगकर्ताओं द्वारा स्वयं दी गई है, इसे स्वतंत्र रूप से सत्यापित नहीं किया गया।</p>
+  <p><b>नोट:</b> यह पेज किसी सरकारी/आधिकारिक शिकायत पोर्टल का हिस्सा नहीं है। दर्ज जानकारी उपयोगकर्ताओं द्वारा स्वयं दी गई है, इसे स्वतंत्र रूप से सत्यापित नहीं किया गया। | <b>Disclaimer:</b> This is not an official government portal. Data is user-submitted and unverified.</p>
+  <p>GitHub Repository: <a href="https://github.com/ashwanihanda-jk/-E20-" style="color:var(--amber); text-decoration:none;">github.com/ashwanihanda-jk/-E20-</a></p>
 </footer>
 
 <script>
